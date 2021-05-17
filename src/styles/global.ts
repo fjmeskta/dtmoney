@@ -6,10 +6,13 @@ export const GlobalStyle = createGlobalStyle`
     --red: #E52E4D;
     --blue: #5429CC;
     --green: #33CC95;
+    --white: #FFF;
     --blue-light: #6933FF;
     --text-title: #363F5F;
     --text-body: #969CB3;
     --shape: #FFFFFF;
+    --input-background: #e7e9ee;
+    --border-input-background: #d7d7d7;
   }
 
   * {
@@ -70,5 +73,16 @@ export const GlobalStyle = createGlobalStyle`
     padding: 3rem;
     position: relative;
     border-radius: 0.24rem;
+  }
+  .react-modal-close{
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    border: 0;
+    background: transparent;
+    transition: filter 0.2s;
+    &:hover {
+      filter: brightness(0.7);
+    }
   }
 `
